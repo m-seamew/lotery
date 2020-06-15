@@ -1,0 +1,174 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .7);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup--chance{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+}
+
+
+.popup__text--chance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.popup__animation{
+  width: 200px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.popup__animation--win{
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.popup--chance > .popup__body{
+  box-shadow: 0px 20px 20px #e3d8c4;
+}
+
+.popup > .popup__body{
+  box-shadow: 0px 20px 20px #e3d8c4;
+}
+
+.popup__button--tryonemore{
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+.popup__body--chance{
+  cursor: pointer !important;
+}
+
+.popup__body {
+  animation: popup .25s ease-in-out 3, visible1 .9s ease-in-out 1;
+  //animation-delay: 0, 0, .3s;
+  animation-direction: alternate;
+
+  padding: 25px 50px 50px 50px;
+  background: white;
+  border: 5px solid #f3ecdf;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+@include mobile{
+  .popup__body{
+    padding: 25px;
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes visible1 {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: .25;
+  }
+
+  90%{
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes visible2 {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup__text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.popup__button {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  border: 1px solid #aa302b;
+  outline: none;
+  background: white;
+  cursor: pointer;
+  background-color: #ff8d63;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.popup__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+.popup__link:visited {
+  color: white;
+}
+
+.popup__ip{
+  text-align: center;
+}
+
+.popup__ip-data{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #d5b478;
+}
+
+.popup__oopss{
+  color: #d5b478;
+}

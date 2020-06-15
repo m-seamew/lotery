@@ -1,0 +1,24 @@
+//@import "bs/variables";
+//@import "site/variables";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+@import "site/mixins/mixins";
+@import "site/index.scss";
+
+@import "site/grid";
+@import "site/post";
+@import "site/mail";
+@import "site/title";
+@import "site/popup";
+

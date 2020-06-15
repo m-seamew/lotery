@@ -1,0 +1,2 @@
+
+//= js-site/lotery

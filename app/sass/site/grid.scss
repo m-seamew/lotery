@@ -1,0 +1,32 @@
+//grid template
+$gridNumber: 12;
+$gatter: 15px;
+
+$contentMaxwidth: 1200px;
+
+//flex
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: $gatter;
+  padding-right: $gatter;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-$gatter);
+}
+
+
+@for $i from 1 to $gridNumber+1 {
+  .col-#{$i} {
+    padding: 0 $gatter;
+    width: 100%/$gridNumber*$i;
+  }
+
+  .col-before-#{$i} {
+    margin-left: 100%/$gridNumber*$i;
+  }
+}
