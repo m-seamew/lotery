@@ -3,5 +3,5 @@ const animationWin = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: '/img/smile-win.json' // the path to the animation json
+  path: './img/smile-win.json' // the path to the animation json
 });
