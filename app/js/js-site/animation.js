@@ -3,7 +3,7 @@ const animation = lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: './img/smile.json' // the path to the animation json
+  path: '/lottery/img/smile.json' // the path to the animation json
 });
 
 
