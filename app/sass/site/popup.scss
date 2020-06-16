@@ -69,20 +69,29 @@
   cursor: pointer !important;
 }
 
+.popup__container{
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .popup__body {
+  margin: 15px auto;
+
   animation: popup .25s ease-in-out 3, visible1 .9s ease-in-out 1;
-  //animation-delay: 0, 0, .3s;
   animation-direction: alternate;
 
   padding: 25px 50px 50px 50px;
+
   background: white;
   border: 5px solid #f3ecdf;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   max-width: 500px;
   border-radius: 20px;
-  margin: 15px;
 }
 
 @include mobile {
@@ -178,7 +187,6 @@
 
 @media (max-width: 370px) {
   .popup__body {
-    margin-top: 100px;
     margin-bottom: 50px;
   }
   .popup__animation--win {
@@ -190,7 +198,6 @@
 
 @media (min-width: 371px) and (max-width: 500px) {
   .popup__body {
-    margin-top: 50px;
     margin-bottom: 50px;
   }
 

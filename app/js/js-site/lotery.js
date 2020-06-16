@@ -155,7 +155,9 @@ function winPopup() {
   let injection = document.createElement('div');
   injection.classList.add('popup');
   injection.innerHTML =
-    `<div class="popup__body">
+    `  <div class="popup__container">
+    <div class="popup__body">
+  
     <div class="popup__animation--win"></div>
         ${clientIpString}
         <div class="popup__text">
@@ -164,6 +166,7 @@ function winPopup() {
         <button class="popup__button">
           <a href="https://google.com" class="popup__link">Claim your Iphone</a>
         </button>
+        </div>
      </div>`;
   injectField.append(injection);
 
@@ -182,7 +185,8 @@ function chancePopup() {
   let injection = document.createElement('div');
   injection.classList.add('popup--chance');
   injection.innerHTML =
-    `<div class="popup__body popup__body--chance">
+    `
+    <div class="popup__body popup__body--chance">
         <div class="popup__text popup__text--chance">
         <div class="popup__animation"></div>
           <div class="popup__oopss">Oopss..</div> But you have ${chance} extra throw
