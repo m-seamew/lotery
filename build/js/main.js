@@ -208,7 +208,6 @@ function chancePopup() {
 
   document.querySelector('body > .container').style.pointerEvents = 'none';
   document.querySelector('.popup__body--chance').addEventListener('click', closeChangePopup);
-
 }
 
 
