@@ -48,11 +48,11 @@
   margin-bottom: 15px;
 }
 
-.popup--chance>.popup__body {
+.popup--chance > .popup__body {
   box-shadow: 0px 20px 20px #e3d8c4;
 }
 
-.popup>.popup__body {
+.popup > .popup__container >.popup__body {
   box-shadow: 0px 20px 20px #e3d8c4;
 }
 
@@ -66,12 +66,11 @@
 }
 
 .popup__body--chance {
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .popup__container{
   width: 100%;
-  height: 100%;
   margin-left: 15px;
   margin-right: 15px;
 }
