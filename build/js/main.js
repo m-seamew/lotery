@@ -173,7 +173,7 @@ function winPopup() {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/img/smile-win.json' // the path to the animation json
+    path: '/lottery/img/smile-win.json' // the path to the animation json
   });
 
   //fixed main container of the page
@@ -203,7 +203,7 @@ function chancePopup() {
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '/img/smile.json' // the path to the animation json
+    path: '/lottery/img/smile.json' // the path to the animation json 
   });
 
   document.querySelector('body > .container').style.pointerEvents = 'none';
