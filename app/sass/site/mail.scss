@@ -1,38 +1,38 @@
 .mail {
   position: relative;
   width: 60%;
-  transition: transform .2s;
 }
 
-.mail:not(.active):hover{
-  //transform: scale(1.2);
- // transition: transform .2s;
-  cursor: pointer;
-  animation: mail .75s ease infinite;
-  animation-direction: alternate;
+@include desktop {
+  .mail:not(.active):hover {
+    cursor: pointer;
+    animation: mail .75s ease infinite;
+    animation-direction: alternate;
+  }
+
+  @keyframes mail {
+    0% {
+      transform: scale(1) rotate(5deg);
+    }
+
+    50% {
+      transform: rotate(355deg);
+    }
+
+    100% {
+      transform: scale(1.2) rotate(0deg);
+    }
+  }
 }
 
-@keyframes mail{
-  0%{
-    transform: scale(1) rotate(5deg);
-  }
-
-  50%{
-    transform:  rotate(355deg);
-  }
-  100%{
-    transform: scale(1.2) rotate(5deg);
-  }
-}
-
-@include mobile{
-  .mail{
+@include mobile {
+  .mail {
     width: 100%;
   }
 }
 
-@include tablet{
-  .mail{
+@include tablet {
+  .mail {
     width: 100%;
   }
 }
